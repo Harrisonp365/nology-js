@@ -116,17 +116,56 @@
 
 // Control flow
 
-const price1 = 5;
-const max = 10;
+// const price1 = 5;
+// const max = 10;
 
-if (max >= price1) {
-  console.log(max);
-}
+// if (max >= price1) {
+//   console.log(max);
+// }
 
-const n = 12;
+// const n = 15;
 
-if (n % 2 == 0) {
-  console.log("n is even");
-} else {
-  console.log("n is odd");
-}
+// if (n % 2 == 0) {
+//   console.log("n is even");
+// } else {
+//   console.log("n is odd");
+// }
+
+// const x = 8;
+// const y = 9;
+
+// if (Number.isInteger(x) && Number.isInteger(y)) {
+//   console.log("Both values are ints");
+//   if (x > y) {
+//     console.log(`${x} is greater than ${y}`);
+//   } else if (x < y) {
+//     console.log(`${x} is smaller than ${y}`);
+//   } else {
+//     console.log(`${x} is equal to ${y}`);
+//   }
+// } else {
+//   console.log("invalid contents");
+// }
+
+// const errorCode = 0;
+
+// switch (errorCode) {
+//   case 0:
+//     console.log("Success");
+//     break;
+//   case 1:
+//     console.log("Error code 1");
+//     break;
+//   case 2:
+//     console.log("Error code 2");
+//     break;
+//   case 3:
+//     console.log("Error code 3");
+//     break;
+
+//   default:
+//     console.log("unidentified error code");
+//     break;
+// }
+
+//FUNCTIONS BRUZ
