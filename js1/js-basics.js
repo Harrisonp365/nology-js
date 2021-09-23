@@ -261,10 +261,32 @@
 // console.log(myFunc);
 // console.log(myFunc2);
 
-let birdArr = ["Mango", "Squeaky", "grape"];
+// let birdArr = ["Mango", "Squeaky", "grape"];
 
-function feedMyBorb(birdArr) {
-  console.log(birdArr + " gets fed");
+// function feedMyBorb(birdArr) {
+//   console.log(birdArr + " gets fed");
+// }
+
+// feedMyBorb(birdArr[2]);
+//----------------------------------------------------------------------------------------------------
+// const n = 10;
+
+// function sum(num) {
+//   let total = 0;
+
+//   for (let i = 0; i <= num; i++) {
+//     total += i;
+//     // console.log(i);
+//   }
+//   return total;
+// }
+
+// console.log(sum(n));
+
+//Non forloop way of sum of num
+const n = 10;
+function sumOfN(n) {
+  return (n * (n + 1)) / 2;
 }
 
-feedMyBorb(birdArr[2]);
+console.log(sumOfN(n));
