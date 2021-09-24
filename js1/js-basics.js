@@ -284,9 +284,77 @@
 // console.log(sum(n));
 
 //Non forloop way of sum of num
-const n = 10;
-function sumOfN(n) {
-  return (n * (n + 1)) / 2;
+// const n = 10;
+// function sumOfN(n) {
+//   return (n * (n + 1)) / 2;
+// }
+
+// console.log(sumOfN(n));
+
+// let arr = [
+//   "milk",
+//   "watermelon",
+//   "eggs",
+//   "soap",
+//   "butter",
+//   "apples",
+//   "ice-cream",
+// ];
+
+// function shopping(array) {
+//   let myShoppingList = "";
+
+//   for (let i = 0; i <= arr.length - 1; i++) {
+//     myShoppingList += i + 1 + " " + arr[i] + "\n";
+//   }
+//   return myShoppingList;
+// }
+
+// console.log(shopping(arr));
+
+//Iterators in JS
+const coaches = ["remi", "calum", "aiden"];
+
+// const cap = [];
+
+// for(let i = 0; i < coaches.length; i++) {
+//   const capital = coaches[i].charAt(0).toUpperCase() + coaches[i].slice(1);
+//   cap.push(capital);
+// }
+// console.log(cap);
+
+const section = ["a1", "1b", "2a", "2b"];
+// const capArr = (arr) => {
+
+//   const sectionCaps = [];
+
+//   for(let i = 0; i < arr.length; i++) {
+//     const lastChar = arr[i].charAt(arr[i].length - 1);
+//     const capitalName = arr[i].slice(0, -1) + lastChar.toUpperCase;
+//   }
+
+// }
+
+const map = (arr, func) => {
+  const capitalArr = [];
+
+  for(let i = 0; i < arr.length; i++) {
+    const newVal = func(arr[i]);
+    capitalArr.push(newVal);
+  }
+  return capitalArr;
 }
 
-console.log(sumOfN(n));
+console.log(map(coaches, (currentItem) => {
+  const capitalName = currentItem.charAt(0).toUpperCase + currentItem.slice(1);
+  return capitalName;
+}));
+
+const numbers = [1,2,3,4,5,6];
+const square = (n) => n ** 2;
+
+console.log(map(numbers, square));
+
+console.log(numbers.map(square));
+//Take in input array and output an array of the same length with modified values
+
