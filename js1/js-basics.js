@@ -313,7 +313,7 @@
 // console.log(shopping(arr));
 
 //Iterators in JS
-const coaches = ["remi", "calum", "aiden"];
+// const coaches = ["remi", "calum", "aiden"];
 
 // const cap = [];
 
@@ -323,7 +323,7 @@ const coaches = ["remi", "calum", "aiden"];
 // }
 // console.log(cap);
 
-const section = ["a1", "1b", "2a", "2b"];
+// const section = ["a1", "1b", "2a", "2b"];
 // const capArr = (arr) => {
 
 //   const sectionCaps = [];
@@ -335,26 +335,67 @@ const section = ["a1", "1b", "2a", "2b"];
 
 // }
 
-const map = (arr, func) => {
-  const capitalArr = [];
+//Map:: Take in input array and output an array of the same length with modified values
+// const map = (arr, func) => {
+//   const capitalArr = [];
 
-  for(let i = 0; i < arr.length; i++) {
-    const newVal = func(arr[i]);
-    capitalArr.push(newVal);
-  }
-  return capitalArr;
-}
+//   for(let i = 0; i < arr.length; i++) {
+//     const newVal = func(arr[i]);
+//     capitalArr.push(newVal);
+//   }
+//   return capitalArr;
+// }
 
-console.log(map(coaches, (currentItem) => {
-  const capitalName = currentItem.charAt(0).toUpperCase + currentItem.slice(1);
-  return capitalName;
-}));
+// console.log(map(coaches, (currentItem) => {
+//   const capitalName = currentItem.charAt(0).toUpperCase + currentItem.slice(1);
+//   return capitalName;
+// }));
+
+// const numbers = [1,2,3,4,5,6];
+// const square = (n) => n ** 2;
+
+// console.log(map(numbers, square));
+
+// console.log(numbers.map(square));
+
+
+//Filter:: takes input array and output is array less than or === to input array
+
+// const scores = [1,2,3,4,5,6,7,8,9];
+
+// let filteredScore = scores.filter((n) => {
+//   return n % 3 !== 0;
+// });
+
+// console.log(filteredScore);
+
+//Join:: takes and array of items and concats them together to create a string
+const char = ["h", "a", "r", "r", "y"];
+const str = char.join('|'); //join method arr to string
+console.log(str);
+const newstr = str.split("|"); //split method string to arr
+console.log(newstr);
+newstr.join("");
+console.log(newstr);
 
 const numbers = [1,2,3,4,5,6];
-const square = (n) => n ** 2;
 
-console.log(map(numbers, square));
+let result = numbers.every(n => n > 0);
+console.log(result);
 
-console.log(numbers.map(square));
-//Take in input array and output an array of the same length with modified values
+const nums = [1,2,3,4,5,6];
+let something = nums.some(n => n % 2 === 0);
+console.log(something);
 
+//Some and every to get a boolean from an arry i.e all input fields have a value
+
+// const numArr = [1,2,3,4,5,6,7,8,9];
+//Reduce is the sum of the array
+//acc starts at 0 we pass in, n is current [i] value then we add acc + n same as forloop
+// let reducedNum = numArr.reduce((acc, n) => acc + n, 0);
+// console.log(reducedNum);
+
+// const names = ["Mango", "Grape", "Squeaky"];
+
+// let newNames = names.reduce((acc, name) => `${acc} + ${name}`);
+// console.log(newNames);
