@@ -63,14 +63,14 @@ addTaskBtn.addEventListener("click", () => {
 //     const newElem = document.createElement("p");
 //     const textNode = document.createTextNode(taskInput.value);
 //     newElem.appendChild(textNode);
-//     addTask.appendChild(newElem);
+//     parent.appendChild(newElem);
 //     taskInput.value = "";
 
-    // if(addTask.childNodes.length > 1) {
-    //     const parentNode = addTask;
-    //     const child = document.getElementById("nothingPara"); //this line errors as keeps trying to delete nothing para
-    //     parentNode.removeChild(child);
-    // }
+// if(addTask.childNodes.length > 1) {
+//     const parentNode = addTask;
+//     const child = document.getElementById("nothingPara"); 
+//this line errors as keeps trying to delete nothing para
+//     parentNode.removeChild(child);
+// }
 // });
-
 
